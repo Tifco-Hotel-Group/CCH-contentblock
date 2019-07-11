@@ -25,7 +25,7 @@
 </div>
 
 <div class="form-group">
-    <?php 
+    <?php
     if (isset($imageforblock) && $imageforblock > 0) {
         $imageforblock_o = File::getByID($imageforblock);
         if (!is_object($imageforblock_o)) {
@@ -70,19 +70,12 @@
     <?php  echo $form->text($view->field('linkforblock'), $linkforblock, array()); ?>
 </div>
 
-<div class="form-group">
-    <?php  echo $form->label('atinternettracking', t("AT Internet Tracking") . ' <i class="fa fa-question-circle launch-tooltip" data-original-title="' . t("At Internet Tracking for the block") . '"></i>'); ?>
-    <?php  echo isset($btFieldsRequired) && in_array('atinternettracking', $btFieldsRequired) ? '<small class="required">' . t('Required') . '</small>' : null; ?>
-    <?php  echo $form->text($view->field('atinternettracking'), $atinternettracking, array (
-  'maxlength' => 250,
-)); ?>
-</div>
 
 <div class="form-group">
     <?php  echo $form->label('buttonforblock', t("Button") . ' <i class="fa fa-question-circle launch-tooltip" data-original-title="' . t("Button for the block") . '"></i>'); ?>
     <?php  echo isset($btFieldsRequired) && in_array('buttonforblock', $btFieldsRequired) ? '<small class="required">' . t('Required') . '</small>' : null; ?>
     <?php  echo $form->text($view->field('buttonforblock'), $buttonforblock, array (
-  'maxlength' => 20,    
+  'maxlength' => 20,
   'placeholder' => 'READ MORE',
 )); ?>
 </div>
