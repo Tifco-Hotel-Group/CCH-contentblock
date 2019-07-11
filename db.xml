@@ -1,0 +1,24 @@
+<?php xml version="1.0"?>
+<schema version="0.3">
+    <table name="btContentblock">
+        <field name="bID" type="I">
+            <key/>
+            <unsigned/>
+        </field>
+        <field name="colwidthselector" type="C"></field>
+        <field name="figureclassselector" type="C"></field>
+        <field name="optionalcolourselector" type="C"></field>
+        <field name="optionalbackgroundselector" type="C"></field>
+        <field name="imageforblock" type="I">
+            <default value="0"/>
+            <unsigned/>
+        </field>
+        <field name="headertext" type="X"></field>
+        <field name="optionalsubheadertext" type="X"></field>
+        <field name="optionaltext" type="X"></field>
+        <field name="linkforblock" type="C"></field>
+        <field name="atinternettracking" type="C" size="255"></field>
+        <field name="buttonforblock" type="C" size="20"></field>
+        <field name="optionaltriangles" type="C"></field>
+    </table>
+</schema>
